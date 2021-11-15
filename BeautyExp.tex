@@ -1,5 +1,7 @@
 \RequirePackage{lineno}
+%\documentclass[preprint,superscriptaddress,nofootinbib, notitlepage, double-spaced, showpacs,floatfix,longbibliography]{revtex4-1}
 \documentclass[review]{elsarticle}
+%\documentclass[twoside,12pt]{article}
 %\linenumbers
 \usepackage{verbatim}
 \usepackage{graphicx}
@@ -52,6 +54,36 @@
 \newcommand{\sNN}{\sqrt{s_{_{NN}}}}
 
 
+\newcommand{\jpsi}{\ensuremath{\mathrm{J}/\psi}\hspace {0.05in}} 
+\newcommand{\ups}{\ensuremath{\Upsilon}\hspace {0.05in}}
+\newcommand{\upsa}{\ensuremath{\Upsilon\mathrm{(1S)}}\hspace {0.05in}}
+\newcommand{\upsb}{\ensuremath{\Upsilon\mathrm{(2S)}}\hspace {0.05in}}
+\newcommand{\upsc}{\ensuremath{\Upsilon\mathrm{(3S)}}\hspace {0.05in}}
+\newcommand{\upsbc}{\ensuremath{\Upsilon\mathrm{(2S+3S)}}\xspace}
+\newcommand{\upsabc}{\ensuremath{\Upsilon\mathrm{(1S+2S+3S)}}\xspace}
+\newcommand{\upsn}{\ensuremath{\Upsilon\mathrm{(nS)}}\xspace}
+\newcommand{\doubleRatioUps}{\ensuremath{\left.(N_{\upsb}/N_{\upsa})_{\mathrm{Pb-Pb}}/(N_{\upsb}/N_{\upsa})_{\mathrm{pp}}\right.\xspace}}
+\newcommand{\psiP}{\ensuremath{\psi\mathrm{(2S)}}\hspace {0.05in}}
+\newcommand{\chic}{\ensuremath{\chi_c}\hspace {0.05in}}
+\newcommand{\chib}{\ensuremath{\chi_b}\hspace {0.05in}}
+
+
+
+\newcommand{\Qcal}{\ensuremath{\Phi\xspace}}
+\newcommand{\ccbar}{\ensuremath{{c\overline{c}}}\xspace}
+\newcommand{\bbbar}{\ensuremath{{b\overline{b}}}\xspace}
+
+\newcommand{\sqrts}{\ensuremath {\sqrt{s}}\hspace {0.05in}}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+
+
+
+
 \begin{document}
 \fontsize{11}{15}
 \selectfont
@@ -102,9 +134,9 @@
 \input{Conclusions}
 
 
-\section*{References}
+%\section*{References}
 %\printbibliography %% for biber
-\bibliography{BeautyExp}
+\bibliography{BeautyExp.bib}
 
 
 \end{document}
