@@ -680,13 +680,158 @@ The suppression due to thermal gluon dissociation describes the
 ALICE measurements after including the comover and shadowing corrections.
 
 
+
+\subsubsection{Suppression in anisotropic medium}
+
+In a series of papers people have studied bottomonia suppression using anisotropic hydrodynamics. 
+There are two major {\it new} ingredients to this work : (1) the first-principles calculation of the thermal widths of heavy quarkonium states 
+and (2) consideration of the momentum anisotropy of the plasma. 
+
+In these works the phase-space distribution of gluons in the local rest frame is assumed to be 
+
+\begin{equation} 
+f({\bf x},{\bf p}) = f_{\rm iso}\left(\sqrt{{\bf p}^2+ \xi({\bf p}\cdot{\bf n})^2 }  / 
+p_{\rm hard} \right) 
+\label{distribution}
+\end{equation} 
+In the above equation $\xi$ is a measure of the degree of anisotropy of the plasma.
+\begin{equation}
+\xi = \frac{1}{2} \langle 
+{\bf p}_\perp^2\rangle/\langle p_z^2\rangle -1
+\end{equation} 
+where $p_z$ and 
+${\bf p}_\perp $ are the partonic longitudinal and transverse momenta in the local
+rest frame, respectively. In equation \ref{distribution}, $p_{\rm hard}$ is the momentum  
+scale of the particles and can be identified with the temperature
+in an isotropic plasma. 
+
+An approximate form of the real perturbative heavy quark potential as function of $\xi$ can be 
+written as~\cite{Dumitru:2007hy} (for $N_c=3$ and $N_f=2$). 
+\begin{eqnarray}
+Re[V_{\rm pert}] &=& - \alpha \exp(-\mu r)/r \nonumber \\
+\left(\frac{\mu}{m_D}\right)^{-4} &=&  
+1 + \xi\left(1 + \frac{\sqrt{2}(1+\xi)^2\left(\cos(2\theta) - 1 \right)}{(2+ \xi)^{5/2}} \right) 
+\label{eq:muparam}
+\end{eqnarray}
+where $\alpha = 4\alpha_s/3$, $m_D^2 = (1.4)^2 16 \pi \alpha_s  \, p_{\rm hard}^2/3$ is the isotropic
+Debye mass and $\theta$ is the angle with respect to the beamline.  
+The factor of $(1.4)^2$ accounts for higher-order corrections to the isotropic Debye 
+mass \cite{Kaczmarek:2004gv}.
+
+This perturbative potential, given in equation (\ref{distribution}) is modified to include the non-perturbative (long range) contributions. 
+The modified real part of the potential is given as~\cite{Dumitru:2007hy} 
+
+
+%
+\begin{eqnarray} 
+\label{eq:repot}
+Re[V] &=& -\frac{\alpha}{r} \left(1+\mu \, r\right) \exp\left( -\mu
+\, r  \right) + \frac{2\sigma}{\mu}\left[1-\exp\left( -\mu
+\, r  \right)\right] \nonumber \\
+&& \hspace{2cm} - \sigma \,r\, \exp(-\mu\,r)- \frac{0.8 \, \sigma}{m_Q^2\, r} \, ,
+\end{eqnarray}
+%
+where the last term is a temperature- and spin-independent quark mass correction 
+\cite{Bali:1997am} and $\sigma = 0.223$ GeV is the string tension.  Here  $\alpha$ 
+is chosen to be  $0.385$ 
+to match zero temperature
+binding energy data for heavy quark states \cite{Dumitru:2007hy}.
+The imaginary part of the potential is taken as the same as the perturbative heavy quark
+potential up to linear order in $\xi$ 
+%
+\begin{equation} 
+Im[V_{\rm pert}] = -\alpha p_{\rm hard} \biggl\{ \phi(\hat{r}) - \xi \left[\psi_1(\hat{r},
+\theta)+\psi_2(\hat{r}, \theta)\right]\biggr\} ,
+\label{eq:impot}
+\end{equation}
+%
+where $\hat{r}=m_D r$ and $\phi$, $\psi_1$, and $\psi_2$ are defined as
+
+%The full model potential is given by $V = Re[V] + i Im[V]$ and can be used in the Schr\"odinger equation. 
+
+\begin{equation}
+\phi(\hat{r}) = 2\int_{0}^{\infty} dz \frac{z}{(z^2+1)^2}\left[1-\frac{\sin\left(z\hat{r}\right)}{\hat{r}}\right],
+\end{equation}
+
+\begin{equation}
+ \psi_1(\hat{r}, \theta) = \int_0^{\infty} dz
+ \frac{z}{(z^2+1)^2}\left(1-\frac{3}{2}
+ \left[\sin^2\theta\frac{\sin(z\, \hat{r})}{z\, \hat{r}}
+ +(1-3\cos^2\theta)G(\hat{r}, z)\right]\right),
+ \end{equation}
+
+ \begin{equation}
+ \psi_2(\hat{r}, \theta) = - \int_0^{\infty} dz
+\frac{\frac{4}{3}z}{(z^2+1)^3}\left(1-3 \left[
+  \left(\frac{2}{3}-\cos^2\theta \right) \frac
+ {\sin(z\, \hat{r})}{z\, \hat{r}}+(1-3\cos^2\theta)
+ G(\hat{r},z)\right]\right).
+\label{eq:psis}
+\end{equation}
+where $G(\hat{r},z)$ is the Meijer G-function. The full model potential, given by $V = Re[V] + i Im[V]$, is used to 
+solve the Schr\"odinger equation. 
+
+
+Solution of the Schr\"odinger equation gives the real and imaginary parts of 
+the binding energy of the states.  The imaginary part defines the instantaneous width of the state
+$Im[E_{\rm bind}(p_{\rm hard},\xi)] \equiv -\Gamma_T(p_{\rm hard},\xi)/2$. 
+The resulting width $\Gamma_T(\tau)$ implicitly depends on the initial temperature of the
+system.
+
+The following rate equation is used to account for in-medium bottomonia state decay,
+%
+\begin{equation} \label{eq:rate}
+\frac{dn(\tau,{\bf x}_\perp,\varsigma)}{d\tau} = -\Gamma(\tau,{\bf x}_\perp,\varsigma)n(\tau,{\bf x}_\perp,\varsigma) ,
+\end{equation}
+%
+where   $\tau = \sqrt{t^{2} - z^{2}}$ is the longitudinal proper time,  ${\bf x}_{\perp}$ is the the transverse coordinate and 
+ $\varsigma = {\rm arctanh}(z/t)$ is the the spatial rapidity. The rate of decay is computed by~\cite{Strickland:2011aa}
+%
+\begin{eqnarray}
+\Gamma(\tau, {\bf x}_{\perp}, \varsigma) = 
+%\begin{cases} 
+&2Im[E_{\text{bind}}(\tau, {\bf x}_{\perp}, \varsigma)] & \ \ Re[E_{\text{bind}}(\tau, {\bf x}_{\perp}, \varsigma)] > 0 \\ 
+&=\gamma_{\text{dis}} & \ \ Re[E_{\text{bind}}(\tau, {\bf x}_{\perp}, \varsigma)] \leq 0. 
+%\end{cases}
+\end{eqnarray}
+%
+In order to look at the suppression one has to calculate $R_{AA}$. The algorithm to obtain $R_{AA}$ is the following. 
+First one obtains 
+\begin{equation}
+ \bar{\gamma}({\bf x}_\perp,p_T,
+\varsigma,b) \equiv \Theta(\tau_f-\tau_{\rm form}(p_T)) \int_{{\rm max}(\tau_{\rm form}(p_T),\tau_0)}^{\tau_f} 
+d\tau\,\Gamma_T(\tau,{\bf x}_\perp,\varsigma,b) 
+\end{equation}
+where $\varsigma$ is the spatial
+rapidity.  From this one obtains  
+\begin{equation}
+R_{AA}({\bf x}_\perp,p_T,\varsigma,b) =% 
+\exp\!\left(-\bar{\gamma}({\bf x}_\perp,p_T,\varsigma,b) \right)
+\end{equation}
+  Finally, one averages
+over ${\bf x}_\perp$ to obtain 
+\begin{equation}
+\langle R_{AA}(p_T,\varsigma,b) \rangle \equiv 
+[\int_{{\bf x}_\perp} \! d{\bf x}_\perp \, T_{AA}({\bf x}_\perp)\,%
+R_{AA}({\bf x}_\perp,p_T,\varsigma,b)]/[\int_{{\bf x}_\perp} \! d{\bf x}_\perp \,% 
+T_{AA}({\bf x}_\perp)]
+\end{equation} 
+
+
+
+
+
+
+
+
+
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Statistical (re) generation models}
 {\color{red} We can include the regenration part from our calculations. These effects are also small.}
 
-
 %\subsubsection{Non-equilibrium effects on quarkonium suppression}
 %\subsubsection{Collisional dissociation of quarkonia from final-state interactions}
+
 
 \subsubsection{Comover models}
 
