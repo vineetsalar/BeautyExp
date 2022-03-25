@@ -1,0 +1,142 @@
+\RequirePackage{lineno}
+%\documentclass[preprint,superscriptaddress,nofootinbib, notitlepage, double-spaced, showpacs,floatfix,longbibliography]{revtex4-1}
+\documentclass[review]{elsarticle}
+%\documentclass[twoside,12pt]{article}
+%\linenumbers
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[breaklinks=true,colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage{rotating}
+\usepackage{graphicx}% Include  files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{epsfig}
+\usepackage{hyperref}
+\usepackage{ulem}
+\usepackage{appendix}
+%\usepackage{iopams}
+\usepackage{mwe}
+\usepackage{subfig}
+\usepackage{lineno}
+\expandafter\let\csname equation*\endcsname\relax
+\expandafter\let\csname endequation*\endcsname\relax
+\usepackage{amsmath}
+\usepackage{geometry}
+\newgeometry{vmargin={20mm}, hmargin={30mm,22mm}}
+%Uncomment next line if AMS fonts required
+\usepackage{times}  
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%\usepackage[backend=biber,style=nature]{biblatex}
+%\addbibresource{BeautyExp.bib}
+
+%%%% new commands
+\newcommand{\barb}{{\bar{b}}}
+\newcommand{\barc}{{\bar{c}}}
+\newcommand{\SNN}{$\sqrt{s_{NN}}=$ }
+\newcommand{\sqrtsnn}{\ensuremath{\sqrt{s_{NN}}}\xspace}
+\newcommand{\raa}{$R_{AA}~$}
+\newcommand{\pt}{$p_{T}$}
+\newcommand{\npart}{$N_{\rm Part}~$}
+\newcommand{\Jpsi}{\ensuremath{J\hspace{-.08em}/\hspace{-.14em}\psi}\xspace} % J/Psi (no mass)
+\newcommand{\qqbar}{\ensuremath{q \overline{q}\xspace}\xspace}
+\newcommand{\QQbar}{\ensuremath{Q \overline{Q}\xspace}\xspace}
+\newcommand{\pp}{{\ensuremath{pp}}\xspace}
+\newcommand{\PgU}{\ensuremath{\Upsilon}\xspace}
+\newcommand{\PgUa}{\ensuremath{\Upsilon\text{(1S)}}\xspace}
+\newcommand{\PgUb}{\ensuremath{\Upsilon\text{(2S)}}\xspace}
+\newcommand{\PgUc}{\ensuremath{\Upsilon\text{(3S)}}\xspace}
+\newcommand{\fig}[1]{Fig.~\ref{#1}\xspace}
+\newcommand{\tab}[1]{Tab.~\ref{#1}\xspace}
+\newcommand{\pT}{p_{T}}
+\newcommand{\sNN}{\sqrt{s_{_{NN}}}}
+
+
+\newcommand{\jpsi}{\ensuremath{\mathrm{J}/\psi}\hspace {0.05in}} 
+\newcommand{\ups}{\ensuremath{\Upsilon}\hspace {0.05in}}
+\newcommand{\upsa}{\ensuremath{\Upsilon\mathrm{(1S)}}\hspace {0.05in}}
+\newcommand{\upsb}{\ensuremath{\Upsilon\mathrm{(2S)}}\hspace {0.05in}}
+\newcommand{\upsc}{\ensuremath{\Upsilon\mathrm{(3S)}}\hspace {0.05in}}
+\newcommand{\upsbc}{\ensuremath{\Upsilon\mathrm{(2S+3S)}}\xspace}
+\newcommand{\upsabc}{\ensuremath{\Upsilon\mathrm{(1S+2S+3S)}}\xspace}
+\newcommand{\upsn}{\ensuremath{\Upsilon\mathrm{(nS)}}\xspace}
+\newcommand{\doubleRatioUps}{\ensuremath{\left.(N_{\upsb}/N_{\upsa})_{\mathrm{Pb-Pb}}/(N_{\upsb}/N_{\upsa})_{\mathrm{pp}}\right.\xspace}}
+\newcommand{\psiP}{\ensuremath{\psi\mathrm{(2S)}}\hspace {0.05in}}
+\newcommand{\chic}{\ensuremath{\chi_c}\hspace {0.05in}}
+\newcommand{\chib}{\ensuremath{\chi_b}\hspace {0.05in}}
+
+
+
+\newcommand{\Qcal}{\ensuremath{\Phi\xspace}}
+\newcommand{\ccbar}{\ensuremath{{c\overline{c}}}\xspace}
+\newcommand{\bbbar}{\ensuremath{{b\overline{b}}}\xspace}
+
+\newcommand{\sqrts}{\ensuremath {\sqrt{s}}\hspace {0.05in}}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+
+
+
+
+\begin{document}
+\fontsize{11}{15}
+\selectfont
+
+\begin{frontmatter}
+  \title{Production of bottomonia states in proton-proton and heavy ion collisions}
+  \author[NPD]{Vineet Kumar\corref{mycorrespondingauthor}}
+  \cortext[mycorrespondingauthor]{Corresponding author}
+  \ead{vineetk@barc.gov.in}
+  \author[NPD,HBNI]{Prashant Shukla}
+  \author[UOC]{Abhijit Bhattacharyya}
+  \address[NPD]{Nuclear Physics Division, Bhabha Atomic Research Centre, Mumbai 400085, India}
+  \address[UOC]{Department of Physics, University of Calcutta, 92, A. P. C. Road Kolkata-700009, India}
+  \address[HBNI]{Homi Bhabha National Institute, Anushakti Nagar, Mumbai 400094, India}
+  \date{\today}
+  
+  \begin{abstract}
+    
+    This work reviews the study of bottomonia production in high energy hadronic collisions to investigate
+    the fundamental aspects of Quantum Chromodynamics. Emphasis is given to the lessons learnt from the LHC
+    data, which are reviewed in a global prospective with the results from the RHIC at lower energies used
+    for comparison. The review covers bottomonia production in proton-proton, proton-nucleus and nucleus-nucleus
+    collisions and includes discussion of the effects of hot and cold strongly interacting matter.
+
+  \end{abstract}
+  
+  \begin{keyword}
+    Beauty, Quarkonium, Hadron Collision, Heavy-Ion Collision, Quark-Gluon Plasma, LHC, RHIC
+  \end{keyword}
+  
+
+%\vspace{2pc}
+%\noindent{\it Keywords}: Beauty, Quarkonium, Hadron Collision, Heavy-Ion Collision, Quark-Gluon Plasma, LHC, RHIC
+
+  
+
+\maketitle
+
+\tableofcontents
+
+
+\end{frontmatter}
+
+\input{Introduction}
+\input{BottPP}
+\input{BottAAexp}
+\input{BottAAthe}
+\input{Conclusions}
+
+
+%\section*{References}
+%\printbibliography %% for biber
+\bibliography{Bott1Review.bib}
+
+
+\end{document}
