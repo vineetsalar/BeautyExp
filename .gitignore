@@ -10,6 +10,8 @@
 *.bbl
 *.bcf
 *.blg
+*.spl
+*.toc
 *.out
 *~
 BeautyExp.run.xml
@@ -18,3 +20,4 @@ BeautyExp2.tex
 Bib_BeautyExp.txt
 ThesisChap.txt
 makePaper
+makelat.txt
